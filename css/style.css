@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #60BF81;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    padding: 20px;
+}
+
+header h2 {
+    text-align: center;
+    color: white;
+}
+
+main {
+    margin: 20px 5px;
+}
+
+.body {
+    max-width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
+    border-radius: 10px;
+}
+
+.elementos {
+    float: left;
+    width: 45%;
+    height: 92%;
+    padding-top: 32px;
+    text-align: center;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.img {
+    float: right;
+    width: 52%;
+    height: 100%;
+    background-color: #04D939;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 0.2em;
+	color: #191970;
+	font-size: 1em;
+}
+
+.campo input[type="text"] {
+	padding: 0.4em;
+	border: 2px solid #191970;
+    border-radius: 10px;
+    outline: none;
+} 
+
+.campo input:focus {
+	background: #dcdcf3;
+}
+
+button {
+    width: 140px;
+    padding: 12px;
+    margin: 10px;
+    background-color: #191970;
+    color: white;
+    border: none;
+    font-size: 1em;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b2b9ec0;
+}
+
+.res {
+    padding: 12px;
+}
+
+.list {
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    margin: 14px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: scroll;
+}

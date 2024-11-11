@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/ico-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contagem</title>
+</head>
+<body>
+    <header>
+        <h2>Contagem</h2>
+    </header>
+    <main>
+        <section class="body">
+            <section class="elementos">
+                <div class="campo">
+                    <label for="inicio">Inicio</label>
+                    <input type="text" name="inicio" id="txti" placeholder="Informe o Valor Inicial">
+                </div>
+                <div class="campo">
+                    <label for="fim">Fim</label>
+                    <input type="text" name="fim" id="txtf" placeholder="Informe o Valor Final">
+                </div>
+                <div class="campo">
+                    <label for="passo">Passo</label>
+                    <input type="text" name="passo" id="txtp" placeholder="Informe o Passo">
+                </div>
+                <button onclick="contar()">Verificar</button>
+                <div class="res">
+                    <p>Contagem.....</p>
+                </div>
+            </section>
+            <section class="img">
+                <div class="list" id="flista">
+                    <div class="res" id="res">
+                        <p>Preparando a Contagem.....</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
