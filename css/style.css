@@ -1,113 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* paleta de Cores 
+#04BF8A, #03a376 */
 
 * {
     margin: 0px;
     padding: 0px;
 }
 
-body {
-    background-color: #60BF81;
-    font-family: "Open Sans", sans-serif;
+h1, p, label, input {
+    font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-header {
-    padding: 20px;
+body {
+    background-image: linear-gradient(to top, #04BF8A, #03a376);
 }
 
-header h2 {
-    text-align: center;
-    color: white;
+body, html {
+    height: 100vh;
+    width: 100vw;
 }
 
 main {
-    margin: 20px 5px;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 
-.body {
-    max-width: 800px;
-    height: 400px;
-    margin: 20px auto;
-    background-color: white;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
-    border-radius: 10px;
-}
-
-.elementos {
-    float: left;
-    width: 45%;
-    height: 92%;
-    padding-top: 32px;
+main > h1 {
     text-align: center;
-    background-color: white;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    padding: 14px;
+    color: white;
 }
 
-.img {
-    float: right;
-    width: 52%;
-    height: 100%;
-    background-color: #04D939;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+.form-contagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 950px;
+    height: 480px;
+    overflow: hidden;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.247);
+    transform: translate(-50%, -50%);
 }
 
-.campo {
-    margin-bottom: 20px;
-}
-
-.campo label {
+.imagem {
     display: block;
-    margin-bottom: 0.2em;
-	color: #191970;
-	font-size: 1em;
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-image: url(../imagens/contagem.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.contagem {
+    display: block;
+    float: left;
+    width: 50%;
+    padding-top: 12px;
+}
+
+div.campo {
+    text-align: center;
+}
+
+div.campo label {
+    display: block;
+	color: #024059;
+    margin-bottom: 4px;
+	font-size: 1.1em;
 }
 
 .campo input[type="text"] {
-	padding: 0.4em;
-	border: 2px solid #191970;
-    border-radius: 10px;
-    outline: none;
+	width: 45%;
+    margin-bottom: 8px;
+    padding: 5px;
+    border: 2px solid #127369;
+    border-radius: 8px;
 } 
 
-.campo input:focus {
-	background: #dcdcf3;
+.campo input:focus-within {
+    background-color: rgb(235, 235, 235);
+    outline: none;
 }
 
-button {
-    width: 140px;
-    padding: 12px;
-    margin: 10px;
-    background-color: #191970;
+.contagem > button {
+    display: block;
+    margin: 15px auto;
+    width: 150px;
+    height: 40px;
+    background-color: #D92525;
     color: white;
+    font-size: 1.04em;
     border: none;
-    font-size: 1em;
     border-radius: 10px;
-    transition: 0.4s;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #2b2b9ec0;
+.contagem > button:hover{
+    background-color: #03A64A;
 }
 
 .res {
-    padding: 12px;
-}
-
-.list {
-    width: 300px;
-    height: 250px;
-    padding: 10px;
-    margin: 14px;
-    background-color: white;
-    border-radius: 5px;
+    margin: auto;
+    font-size: 1.1em;
     overflow: scroll;
+    width: 330px;
+    height: 114px;
+    padding: 7px;
+    background: rgb(216, 224, 220);
 }
 
-footer {
+.res > p {
     text-align: center;
-    color: white;
+    padding: 5px;
 }
