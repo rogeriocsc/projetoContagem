@@ -8,7 +8,7 @@
     padding: 0px;
 }
 
-h1, p, label, input {
+h2, p, label, input {
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
@@ -29,57 +29,35 @@ main {
     width: 100vw;
 }
 
-main > h1 {
-    text-align: center;
-    padding: 14px;
-    color: white;
-}
-
-.form-contagem {
+.projeto-contagem {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 950px;
-    height: 480px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
     overflow: hidden;
     background: white;
     border-radius: 10px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.247);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.363);
     transform: translate(-50%, -50%);
 }
 
-.imagem {
-    display: block;
-    float: right;
-    width: 50%;
-    height: 100%;
-    background-image: url(../imagens/contagem.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.contagem {
-    display: block;
-    float: left;
-    width: 50%;
-    padding-top: 12px;
-}
-
-div.campo {
-    text-align: center;
+.projeto-contagem > h2 {
+    padding: 18px;
+    background-color: #23606E;
+    color: white;
 }
 
 div.campo label {
     display: block;
 	color: #024059;
-    margin-bottom: 4px;
+    margin: 5px;
 	font-size: 1.1em;
 }
 
 .campo input[type="text"] {
 	width: 45%;
-    margin-bottom: 8px;
     padding: 5px;
     border: 2px solid #127369;
     border-radius: 8px;
@@ -90,34 +68,28 @@ div.campo label {
     outline: none;
 }
 
-.contagem > button {
-    display: block;
-    margin: 15px auto;
+button {
     width: 150px;
     height: 40px;
+    margin: 14px;
     background-color: #D92525;
     color: white;
     font-size: 1.04em;
     border: none;
-    border-radius: 10px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
-.contagem > button:hover{
+button:hover{
     background-color: #03A64A;
 }
 
-.res {
-    margin: auto;
-    font-size: 1.1em;
-    overflow: scroll;
-    width: 330px;
-    height: 114px;
-    padding: 7px;
-    background: rgb(216, 224, 220);
-}
-
-.res > p {
-    text-align: center;
+div.res {
+    width: 320px;
+    height: 110px;
+    margin: 5px auto;
     padding: 5px;
+    overflow: scroll;
+    font-size: 1.1em;
+    background: rgb(216, 224, 220);
 }
