@@ -5,30 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-query.css">
     <title>Projeto Contagem</title>
 </head>
 <body>
     <main>
-        <section class="projeto-contagem">
+        <section class="projeto-c">
             <h2>Projeto Contagem</h2>
-            <div class="campo">
-                <label for="txti">Início</label>
-                <input type="text" name="inicio" id="txti" placeholder="Informe o Valor Inicial">
-            </div>
-            <div class="campo">
-                <label for="txtf">Fim</label>
-                <input type="text" name="fim" id="txtf" placeholder="Informe o Valor Final">
-            </div>
-            <div class="campo">
-                <label for="txtp">Passo</label>
-                <input type="text" name="passo" id="txtp" placeholder="Informe o Passo">
-            </div>
-            <button onclick="contar()">Verificar</button>
-            <div class="res" id="resp">
-                <p>Contagem.....</p>
+            <hr>
+            <div class="base-campos">
+                <div class="campos">
+                    <label for="txti">Início</label>
+                    <input type="text" name="inicio" id="txti" placeholder="Informe o Valor Inicial">
+                    <label for="txtf">Fim</label>
+                    <input type="text" name="fim" id="txtf" placeholder="Informe o Valor Final">
+                    <label for="txtp">Passo</label>
+                    <input type="text" name="passo" id="txtp" placeholder="Informe o Passo">
+                </div>
+                <button onclick="contar()">Contar</button>
             </div>
         </section>
+        <div class="res" id="resp">
+            <p>Contando...</p>
+        </div>
     </main>
     <script src="js/script.js"></script>
 </body>

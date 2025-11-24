@@ -1,95 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* paleta de Cores 
-#04BF8A, #03a376 */
-
-* {
-    margin: 0px;
-    padding: 0px;
+body {
+    background-color: #3B8C66;
 }
 
 h2, p, label, input {
-    font-family: "Poppins", serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-body {
-    background-image: linear-gradient(to top, #04BF8A, #03a376);
+section.projeto-c {
+    max-width: 500px;
+    height: 360px;
+    margin: 15px auto;
+    background-color: white;
+    box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.363);
+    border-radius: 5px;
 }
 
-body, html {
-    height: 100vh;
-    width: 100vw;
-}
-
-main {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}
-
-.projeto-contagem {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    height: 500px;
+section.projeto-c > h2 {
     text-align: center;
-    background: white;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.363);
-    transform: translate(-50%, -50%);
+    padding-top: 8px;
 }
 
-.projeto-contagem > h2 {
-    padding: 18px;
-    background-color: #23606E;
-    color: white;
+section.projeto-c > hr {
+    padding: 2px;
+    background: #A6BC09;
+    border: none;
 }
 
-div.campo label {
+div.base-campos {
+    text-align: center;
+}
+
+div.campos label {
     display: block;
+    margin: 4px;
 	color: #024059;
-    margin: 5px;
 	font-size: 1.1em;
 }
 
-.campo input[type="text"] {
-	width: 40%;
+div.campos input[type="text"] {
+	width: 35%;
     padding: 5px;
     border: 2px solid #127369;
-    border-radius: 8px;
+    border-radius: 5px;
 } 
 
-.campo input:focus-within {
+div.campos input:focus-within {
     background-color: rgb(235, 235, 235);
     outline: none;
 }
 
-button {
+div.base-campos > button {
     width: 150px;
     height: 40px;
-    margin: 14px;
+    margin-top: 15px;
     background-color: #D92525;
     color: white;
-    font-size: 1.04em;
+    font-size: 1em;
     border: none;
     cursor: pointer;
     border-radius: 10px;
 }
 
-button:hover{
+div.base-campos > button:hover {
     background-color: #03A64A;
 }
 
 div.res {
-    width: 320px;
-    height: 110px;
-    margin: 5px auto;
-    padding: 5px;
+    max-width: 470px;
+    height: 150px;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
     overflow: scroll;
-    font-size: 1.1em;
-    background: rgb(216, 224, 220);
+    font-size: 1.3em;
+    box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.363);
+    border-radius: 5px;
 }
