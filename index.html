@@ -9,17 +9,18 @@
 </head>
 <body>
     <main>
-        <section class="projeto-c">
+        <section class="projeto-contagem">
             <h2>Projeto Contagem</h2>
-            <hr>
-            <div class="base-campos">
+            <div class="elementos">
                 <div class="campos">
-                    <label for="txti">Início</label>
-                    <input type="text" name="inicio" id="txti" placeholder="Informe o Valor Inicial">
-                    <label for="txtf">Fim</label>
-                    <input type="text" name="fim" id="txtf" placeholder="Informe o Valor Final">
-                    <label for="txtp">Passo</label>
-                    <input type="text" name="passo" id="txtp" placeholder="Informe o Passo">
+                    <label for="i_inic">Início</label>
+                    <input type="number" name="inicio" id="i_inic" placeholder="Informe o Valor Inicial">
+
+                    <label for="i_fim">Fim</label>
+                    <input type="number" name="fim" id="i_fim" placeholder="Informe o Valor Final">
+
+                    <label for="i_passo">Passo</label>
+                    <input type="number" name="passo" id="i_passo" placeholder="Informe o Passo">
                 </div>
                 <button onclick="contar()">Contar</button>
             </div>

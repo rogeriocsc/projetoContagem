@@ -1,82 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-body {
-    background-color: #3B8C66;
+/* Paleta de cores 
+#00f2fe - tom de ciano vibrante
+*/
+
+/* Reset básico */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-h2, p, label, input {
-    font-family: "Poppins", sans-serif;
+/* Configurações básicas */
+h2, p, label, button {
+    font-family: "Nunito", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-section.projeto-c {
+/* Fundo da página */
+body {
+    background-color: #00f2fe;
+}
+
+main {
+    margin: 0px 5px;
+}
+
+.projeto-contagem {
+    width: 100%;
     max-width: 500px;
-    height: 360px;
-    margin: 15px auto;
+    margin: 20px auto;
+    padding: 20px;
     background-color: white;
-    box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.363);
-    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.308);
+    border-radius: 20px;
 }
 
-section.projeto-c > h2 {
+.projeto-contagem h2 {
     text-align: center;
-    padding-top: 8px;
+    color: #14293A;
+    margin-bottom: 14px;
 }
 
-section.projeto-c > hr {
-    padding: 2px;
-    background: #A6BC09;
-    border: none;
-}
-
-div.base-campos {
+.elementos {
     text-align: center;
 }
 
 div.campos label {
     display: block;
-    margin: 4px;
-	color: #024059;
-	font-size: 1.1em;
+    margin: 8px;
+    font-weight: bold;
+    color: #024059;
 }
 
-div.campos input[type="text"] {
-	width: 35%;
-    padding: 5px;
-    border: 2px solid #127369;
-    border-radius: 5px;
-} 
-
-div.campos input:focus-within {
-    background-color: rgb(235, 235, 235);
+div.campos input {
+    padding: 12px;
+    border: 2px solid #a5a5a5;
+    font-size: 16px;
     outline: none;
+    transition: 0.3s;
+    border-radius: 8px;
 }
 
-div.base-campos > button {
+/* Efeito ao clicar no input */
+.campos input:focus {
+    border-color: #0178f7;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: mintcream;
+}
+
+/* Botão */
+button {
     width: 150px;
     height: 40px;
-    margin-top: 15px;
-    background-color: #D92525;
+    margin: 20px;
+    background-color: #0264ce;
     color: white;
     font-size: 1em;
     border: none;
     cursor: pointer;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
-div.base-campos > button:hover {
-    background-color: #03A64A;
+button:hover {
+    background-color: #0056b3;
 }
 
+/* Resultado */
 div.res {
-    max-width: 470px;
-    height: 150px;
+    width: 100%;
+    max-width: 500px;
     margin: auto;
-    padding: 15px;
+    padding: 20px;
+    font-size: 1.1em;
+    font-family: "Nunito", sans-serif;
     background-color: white;
-    overflow: scroll;
-    font-size: 1.3em;
-    box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.363);
-    border-radius: 5px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.308);
 }
+
