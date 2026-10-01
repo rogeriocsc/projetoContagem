@@ -13,7 +13,7 @@
 }
 
 /* Configurações básicas */
-h2, p, label, button {
+h2, p, label, button, div.res {
     font-family: "Nunito", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -97,7 +97,6 @@ div.res {
     margin: auto;
     padding: 20px;
     font-size: 1.1em;
-    font-family: "Nunito", sans-serif;
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.308);
